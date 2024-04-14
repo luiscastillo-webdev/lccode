@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
+const apiId = process.env.CLIMA_API_KEY;
 export default function Clima() {
-  const apiId = process.env.CLIMA_API_KEY;
   const [listaClima, setListaClima] = useState([
     {
       ciudad: "",
