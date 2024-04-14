@@ -40,7 +40,7 @@ export default function Clima() {
           key={listaIndex}
           className="w-full flex flex-col justify-center items-center text-slate-200 p-7 my-10"
         >
-          <h3 className="text-3xl  text-center">Clima en</h3>
+          <h3 className="text-3xl  text-center">Clima en:</h3>
           <h4 className="text-5xl  text-center">{lista.ciudad}</h4>
           <img
             className="mx-auto"
