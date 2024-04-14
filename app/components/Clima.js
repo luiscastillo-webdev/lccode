@@ -1,7 +1,8 @@
+"use cliente";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 
 const apiId = process.env.CLIMA_API_KEY;
+
 export default function Clima() {
   const [listaClima, setListaClima] = useState([
     {
@@ -41,8 +42,10 @@ export default function Clima() {
         >
           <h3 className="text-3xl  text-center">Clima en</h3>
           <h4 className="text-5xl  text-center">{lista.ciudad}</h4>
-          <Image
+          <img
             className="mx-auto"
+            width="32px"
+            height="32px"
             src={`https://openweathermap.org/img/wn/${lista.icono}@2x.png`}
             alt="icon"
           />
