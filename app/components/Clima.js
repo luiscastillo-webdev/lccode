@@ -1,9 +1,8 @@
 "use cliente";
 import React, { useState, useEffect } from "react";
 
-const apiId = process.env.CLIMA_API_KEY;
-
 export default function Clima() {
+  const apiId = process.env.CLIMA_API_KEY;
   const [listaClima, setListaClima] = useState([
     {
       ciudad: "",
